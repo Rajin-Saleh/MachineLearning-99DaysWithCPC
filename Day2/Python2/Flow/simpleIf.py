@@ -11,11 +11,13 @@ else:
 
 money_available = 46
 
-if money_available > 80:
+if money_available >= 80:
     print("Eat something Fancy!")
 elif money_available > 45:
     print("Eat something nice")
 elif money_available > 15:
     print("Eat something okay")
+elif money_available > 10:
+    pass
 else:
     print("Eat something cheap.")
