@@ -1,19 +1,5 @@
 # 99DaysWithCPC- Machine Learning challenge
 
-# Scope in Python
-
-# import math
-
-# w = abs(-7.86)
-# x = math.ceil(1.4)
-# y = math.floor(1.4)
-# z = math.pi
-
-# print(w)
-# print(x)
-# print(y)
-# print(z)
-
 # local scope
 
 """
@@ -111,3 +97,32 @@ def myFunc1():
 
 
 print(myFunc1())
+
+
+print("-----Exercise-----")
+
+# exercise
+# create 2 global variables called 'multiplier' and has_calculated
+# multiplier should have any integer and has_calculated should be set to the boolean False
+
+# then create a function called multiply_calculator that takes one argument and calculates
+# the multiplication of that number
+# inside of the function multiply the parameter with the global variable multiplier
+# once the calculation is done set has_calculated to True
+# store that new number a variable called result and return it
+# print the return value of the function (after it was called with the number)
+
+
+multiplier = 5
+has_calculated = False
+
+
+def multiply_calculator(number):
+    global has_calculated
+    has_calculated = True
+    result = number * multiplier
+    return result
+
+
+print(multiply_calculator(10))
+print(has_calculated)
