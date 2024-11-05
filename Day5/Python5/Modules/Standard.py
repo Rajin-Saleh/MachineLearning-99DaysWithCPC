@@ -19,3 +19,22 @@ print(string.ascii_uppercase)
 
 print(sudo(4.9))
 print(dt.now())
+
+
+# time generator
+
+import time
+
+
+def time_generator(interval, duration):
+    start = time.time()
+    end = start + duration
+
+    while time.time() < end:
+        current = time.strftime("%Y - %m - %d %H:%M:%S", time.localtime())
+        yield current
+        time.sleep(interval)
+
+
+for current in time_generator(1, 5):
+    print(current)
