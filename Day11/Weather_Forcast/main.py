@@ -1,3 +1,5 @@
+# 99DayWithCPC - Machine Learning
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -5,20 +7,19 @@ import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# Step 1: Load CSV data
-# Load the data using pandas, then convert necessary columns to numpy arrays
+# Loading the CSV file
+
 data = pd.read_csv("file.csv")
-# Display first few rows to understand structure (optional)
 print(data.head())
 
-# Step 2: Extract data for analysis
-# Convert columns to numpy arrays
+# Extracting the data for analyzing
+
 dates = pd.to_datetime(data["Date/Time"])  # Convert Date/Time to datetime
 temp = data["Temp_C"].values  # Temperature
 humidity = data["Rel Hum_%"].values  # Humidity
 weather_conditions = data["Weather"].values  # Weather condition descriptions
 
-# Step 3: Calculate Max-Min Temperature Range
+# Calculating the Max-Min Temperature Range
 max_temp = np.max(temp)
 min_temp = np.min(temp)
 temp_range = max_temp - min_temp
@@ -26,14 +27,15 @@ print(
     f"Max Temperature: {max_temp}°C, Min Temperature: {min_temp}°C, Temperature Range: {temp_range}°C"
 )
 
-# Step 4: Calculate Monthly Averages (if data has multiple months)
-# Group by month and calculate mean values for temperature and humidity
+# Calculating Monthly Averages (if data has multiple months)
+
 data["Month"] = dates.dt.month
 monthly_avg_temp = data.groupby("Month")["Temp_C"].mean().values
 monthly_avg_humidity = data.groupby("Month")["Rel Hum_%"].mean().values
 
-# Step 5: Visualize Data
-# Plot line chart for Temperature and Humidity trends
+# Visualizing Data
+# Temperature and Humidity trends with matplotlib
+
 plt.figure(figsize=(10, 6))
 plt.plot(dates, temp, label="Temperature (°C)", color="tab:blue", alpha=0.7)
 plt.plot(dates, humidity, label="Humidity (%)", color="tab:orange", alpha=0.7)
@@ -44,8 +46,9 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# Step 6: Plot pie chart for weather condition distribution
-# Count each unique weather condition
+# Pie chart for weather distribution
+# unique weather conditions
+
 weather_counts = data["Weather"].value_counts()
 plt.figure(figsize=(8, 8))
 plt.pie(weather_counts, labels=weather_counts.index, autopct="%1.1f%%", startangle=140)
