@@ -15,7 +15,7 @@ Machine learning is reshaping the future of technology in ways we could never ha
     Learn the fundamentals of machine learning and its applications.
     Implement at least one machine learning project every 10 days.
     Understand and apply machine learning models, including regression, classification, clustering, and deep learning.
-    Enhance coding skills with Python, data handling libraries, and machine learning frameworks like Scikit-learn, TensorFlow, and PyTorch.
+    Enhance coding skills with Python, data handling libraries, and machine learning frameworks like Scikit-learn, TensorFlow.
     Document everything, including code, notes, and project results, in this repository.
 
 🛠️ What I'll Cover
@@ -27,7 +27,6 @@ Throughout the challenge, I’ll be focusing on:
     Machine Learning Models: Supervised and unsupervised learning models including linear regression, decision trees, support vector machines (SVM), k-means clustering, and neural networks.
     Deep Learning & Neural Networks: Understanding the basics of neural networks and diving into frameworks like TensorFlow and Keras.
     AI Projects: Real-world applications including image classification, natural language processing, and recommendation systems.
-    API and Django: Integrating machine learning models into web applications.
 
 🗓️ Progress & Updates
 
@@ -37,7 +36,6 @@ Although the challenge hasn’t started yet, this README will be updated regular
     [60-hour ML Course] - Foundation in Math, Stats, and Basic Models
     [20-hour ML Models Video] - Focused on practical model implementation
     [Harvard CS50 AI Course] - A deeper dive into AI concepts
-    [Deep Learning for Computer Vision] - Specialized in neural networks for vision tasks
     [Generative AI Course] - Advanced generative models and AI applications
 
 I will also use:
@@ -49,9 +47,7 @@ I will also use:
 
 Here are a few of the projects I’ll be working on during the challenge:
 
-    Linear Regression Model: Predicting house prices.
-    Image Classifier: Recognizing objects from images.
-    Sentiment Analysis: Analyzing text to detect positive or negative sentiment.
+    (Coming Soon)
 
 Additional projects will be revealed as I progress! This README will be updated with new projects and insights as they come to life.
 🌱 How You Can Follow Along
